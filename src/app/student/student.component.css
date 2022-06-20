@@ -1,0 +1,20 @@
+.section{
+    margin: 10px;
+    padding: 20px;
+}
+table {
+    width: 100%;
+}
+
+.btn_insert__{
+    margin-top: 10px;
+}
+
+.example-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .example-container > * {
+    width: 50%;
+  }
