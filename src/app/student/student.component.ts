@@ -38,6 +38,7 @@ export class StudentComponent implements OnInit {
   ngOnInit(): void {
     let studentExample: Student = { name: "Randall", lastName: "Mora", code: "B95212", grade: 10 }
     studentList.push(studentExample)
+    this.refresh()
   }
 
   addStudent() {
