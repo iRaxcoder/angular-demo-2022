@@ -1,0 +1,25 @@
+<div style="margin: 10px;">
+    <button type="submit" (click)="backToIndex()" mat-raised-button>Atrás</button>
+    <h1 style="margin-top: 10px;">Modificar estudiante</h1>
+
+    <div class="example-container">
+        <mat-form-field>
+            <input [(ngModel)]="student.name" matInput placeholder="Nombre" required>
+        </mat-form-field>
+
+        <mat-form-field>
+            <input [(ngModel)]="student.lastName" matInput placeholder="Apellido" required>
+        </mat-form-field>
+
+        <mat-form-field>
+            <input [(ngModel)]="student.code" matInput placeholder="Código" required>
+        </mat-form-field>
+
+        <mat-form-field>
+            <input [(ngModel)]="student.grade" min="1" type="number" matInput placeholder="Nota" required>
+        </mat-form-field>
+    </div>
+    <button class="btn_insert__" type="submit" (click)="editStudent()" mat-raised-button>Guardar
+        cambios</button>
+
+</div>
