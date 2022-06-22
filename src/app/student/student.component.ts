@@ -24,9 +24,6 @@ export class StudentComponent implements OnInit {
   public code: string
   public grade: number;
 
-  //table info
-  displayedColumns: string[] = ['Código', 'Nombre', 'Apellido', 'Nota'];
-  dataSource = new MatTableDataSource(studentList);
   constructor() {
     studentList=[]
     this.name=""
@@ -34,6 +31,10 @@ export class StudentComponent implements OnInit {
     this.code=""
     this.grade=0
    }
+
+  //table info
+  displayedColumns: string[] = ['Código', 'Nombre', 'Apellido', 'Nota'];
+  dataSource = new MatTableDataSource(studentList);
 
   ngOnInit(): void {
     let studentExample: Student = { name: "Randall", lastName: "Mora", code: "B95212", grade: 10 }
