@@ -8,6 +8,7 @@ import { StudentService } from '../services/student.service';
   templateUrl: '../views/student/create.component.html',
   styleUrls: ['../styles/student.component.css']
 })
+
 export class CreateComponent implements OnInit {
   public name: string
   public lastName: string
